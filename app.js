@@ -4,6 +4,7 @@ const fs = require('fs');
 const { startBot } = require('./bot/bot');
 const { startCron } = require('./cron/cronRetrieve');
 const SESSION_FILE_PATH = './session.json';
+require('dotenv').config();
 let client;
 let sessionData;
 
