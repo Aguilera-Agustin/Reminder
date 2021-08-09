@@ -2,6 +2,7 @@ const { Client } = require('whatsapp-web.js')
 const qrcode = require('qrcode-terminal')
 const fs = require('fs');
 const { startBot } = require('./bot/bot');
+const { startCron } = require('./cron/cronRetrieve');
 const SESSION_FILE_PATH = './session.json';
 let client;
 let sessionData;
@@ -30,6 +31,7 @@ const withSession = () => {
     client = new Client({
         session: sessionData
     });
+    startCron(client)
 
     client.on('ready', () => {
         console.log('Client is ready!');

@@ -1,5 +1,5 @@
 const dayValidation = (possibleDay) => {
-    const days = ['hoy', 'mañana', 'pasado', 'lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
+    const days = ['hoy', 'mañana', 'pasado']
     return days.includes(possibleDay.toLowerCase())
 }
 
