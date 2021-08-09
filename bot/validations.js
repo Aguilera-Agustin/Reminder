@@ -62,8 +62,6 @@ const isCorrectData = (message, from, client) => {
 }
 
 const isValidDate = (finalDate, from , client) => {
-    console.log('VALID DATE!!!')
-    console.log(moment(finalDate, 'DD/MM/YYYY-HH:mm:ss'))
     if(moment(finalDate) < moment()){
         const txt = `🐱 Hey! esa hora ya pasó
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - 

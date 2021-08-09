@@ -9,7 +9,6 @@ const retrieveFromDb = async (date, hour) =>{
                 id: element.id,
                 ...element.data()
             }
-            console.log(eachReminder)
             allData.push(eachReminder)
         });
         return allData

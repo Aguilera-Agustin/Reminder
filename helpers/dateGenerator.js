@@ -21,7 +21,6 @@ const dateGenerator = (day, hour) =>{
     
     if(day==='mañana'){
         finalDate = moment(myDate.add(1, 'days')).format('DD/MM/YYYY-HH:mm:ss')
-        console.log(finalDate)
         return finalDate;  
     }
     
